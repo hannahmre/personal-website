@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.place {
+    margin-top: 1000px;
+}
+
+.design {
+    background-color: #20368F;
+    height: 1000px;
+    width: 1300px;
+    -ms-transform: rotate(25deg);
+    /* IE 9 */
+    transform: rotate(25deg);
+    border-radius: 10%;
+    margin-top: -450px;
+}
+
+
+/* Navagation Bar */
+
+.navbar {
+    height: 100px;
+    /* background-color: rgba(248, 248, 248, 0.5) !important; */
+    background-color: rgba(32, 54, 143, 0.85) !important;
+    /* (235, 235, 235) */
+    font-family: Helvetica;
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.nav-item a {
+    color: #EBEBEB !important;
+    padding-right: 50px;
+}
+
+.nav-item a:hover {
+    color: #829CD0 !important;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+
+/* Header (contains everything in header section) */
+
+.jumbotron {
+    height: 660px;
+    background-color: rgba(130, 156, 208, 0.0) !important;
+    margin-top: -550px;
+}
+
+
+/* Section that contains h1 tags for header */
+
+.headerPhrase {
+    color: white;
+    background-color: hsl(228, 63%, 34%, 0.0);
+    margin-top: 85px;
+    margin-left: 10%;
+    margin-right: 10px;
+    width: 500px;
+    float: left;
+    font-family: Helvetica;
+    /* border: 1px solid white; */
+    padding: 12px 20px;
+    position: relative;
+    text-align: right;
+    letter-spacing: 2px;
+}
+
+.headone {
+    font-size: 55px;
+}
+
+.headtwo {
+    margin-top: -55px;
+    font-size: 18px;
+}
+
+.headthree {
+    margin-top: -50px;
+    font-size: 25px;
+}
+
+.headerdetails a {
+    color: #EBEBEB;
+    margin-top: 15px;
+    font-family: Helvetica;
+    position: relative;
+    font-size: 14px;
+}
+
+.headerdetails a:hover {
+    font-size: 14px;
+    color: #829CD0;
+    text-decoration: none;
+}
+
+
+/* Learn More Button */
+
+.learn {
+    margin-top: 20px;
+    /* left: 20%; */
+    border-radius: 25px;
+    border: 1px solid white;
+    background-color: transparent;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px
+}
+
+.learn a {
+    color: white;
+    text-decoration: none;
+}
+
+.learn a:hover {
+    color: #EBEBEB;
+    text-decoration: none;
+}
+
+.profilepic {
+    position: relative;
+    top: 15%;
+    /* left: 15%; */
+    width: 330px;
+    height: 330px;
+}
+
+
+/* Middle Section (contains everything in Section) */
+
+#scroll_holder {
+    height: 150px;
+}
+
+
+/* About Section */
+
+.about_header {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    border-bottom: 1px solid #829CD0;
+    padding-bottom: 10px;
+}
+
+.about_header h1 {
+    padding-top: 20px;
+}
+
+.about {
+    text-align: center;
+    padding-top: 50px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.hiddentwo {
+    opacity: 0;
+}
+
+.fade-in-elementtwo {
+    animation: fade-in 5.4s;
+}
+
+.countdown {
+    border: 1px solid #829CD0;
+    width: 400px;
+    padding: 10px;
+    margin: 50px auto;
+    padding-left: 25px;
+}
+
+.countdown p {
+    display: inline;
+    font-size: 18px;
+}
+
+#demo {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.other_links a {
+    text-align: center;
+    color: #20368F;
+    font-size: 18px;
+}
+
+.other_links a:hover {
+    color: #829CD0;
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #20368F;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    color: white;
+    margin-top: 50px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #829CD0;
+    text-decoration: none;
+}
