@@ -36,7 +36,6 @@ img {
     top: 0;
     height: 90px;
     width: 100%;
-    /* padding-top: 30px; */
     padding-bottom: 10px;
     transition: 0.2s;
     font-size: 18px;
@@ -57,7 +56,6 @@ img {
 .nav ul a {
     color: white;
     text-decoration: none;
-    /* font-size: 22px; */
 }
 
 .nav ul a:hover {
@@ -71,7 +69,6 @@ img {
 
 .nav_projects {
     grid-column: 11 / span 1;
-    /* margin-right: 20px; */
 }
 
 .nav_linkedin {
@@ -90,14 +87,11 @@ img {
     height: 70vh;
     margin-top: 65px;
     letter-spacing: 2px;
-    /* border: 1px solid red; */
 }
 
 .headerPhrase p {
     padding: 0;
     margin: 0;
-    /* padding-right: 10px; */
-    /* height: 100px; */
     justify-self: end;
 }
 
@@ -172,7 +166,6 @@ img {
 .profilepic {
     grid-column: 2 / span 1;
     grid-row: 1 / span 5;
-    /* padding-top: 20px; */
     width: 350px;
     height: 350px;
     padding-left: 40px;
