@@ -1,0 +1,118 @@
+html {
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.design {
+    background-color: #20368F;
+    height: 1000px;
+    /* width: 1300px; */
+    width: 100%;
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+    border-radius: 10%;
+    margin-top: -450px;
+    position: relative;
+    z-index: -1;
+}
+
+img {
+    max-width: 100%;
+}
+
+.maincontainer {
+    margin-top: -550px;
+    color: white;
+    height: 100%:
+}
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* border: 1px solid black; */
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+.nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.nav ul a:hover {
+    color: lightblue;
+}
+
+.nav_name {
+    grid-column: 1 / span 6;
+    padding-left: 10px;
+}
+
+.nav_projects {
+    grid-column: 11 / span 1;
+}
+
+.nav_linkedin {
+    grid-column: 12 / span 1;
+    padding-right: 10px;
+}
+
+.headercontent {
+    height: 500px;
+}
+
+.headerPhrase {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    height: 30vh;
+    justify-items: center;
+    align-items: center;
+}
+
+.headerPhrase p {
+    padding: 0;
+    margin: 0;
+    height: 100px;
+}
+
+.headthree {
+    grid-column: 0;
+    grid-row: 2 / span 1;
+    color: black;
+}
+
+.headtwo {
+    grid-column: 0;
+    grid-row: 3 / span 1;
+    color: black;
+}
+
+.headerdetails {
+    grid-column: 0;
+    grid-row: 4 / span 1;
+    color: black;
+}
+
+.learn {
+    grid-column: 0;
+    grid-row: 5 / span 1;
+    height: 10vh;
+    width: 10vw;
+}
+
+.profilepic {
+    grid-column: 2 / span 1;
+    grid-row: 0 / span 6;
+    padding-top: 20px;
+    width: 350px;
+    height: 350px;
+}
