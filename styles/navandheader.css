@@ -7,7 +7,7 @@ html {
     background-color: #20368F;
     height: 1000px;
     /* width: 1300px; */
-    width: 100%;
+    width: 105%;
     -ms-transform: rotate(25deg);
     transform: rotate(25deg);
     border-radius: 10%;
@@ -29,6 +29,8 @@ img {
 .nav {
     padding-top: 30px;
     padding-bottom: 10px;
+    transition: 0.2s;
+    font-size: 18px;
     /* border: 1px solid black; */
 }
 
@@ -58,11 +60,12 @@ img {
 
 .nav_projects {
     grid-column: 11 / span 1;
+    /* margin-right: 20px; */
 }
 
 .nav_linkedin {
     grid-column: 12 / span 1;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 
@@ -76,20 +79,22 @@ img {
     grid-template-columns: 3fr 3fr;
     height: 70vh;
     margin-top: 55px;
+    letter-spacing: 2px;
     /* border: 1px solid red; */
 }
 
 .headerPhrase p {
     padding: 0;
     margin: 0;
-    padding-right: 10px;
+    /* padding-right: 10px; */
     /* height: 100px; */
     justify-self: end;
+    align-self: center;
 }
 
 .headone {
     font-size: 55px;
-    margin-top: 25px;
+    padding-top: 55px;
 }
 
 .headthree {
@@ -118,6 +123,7 @@ img {
     font-family: Helvetica;
     position: relative;
     font-size: 14px;
+    text-decoration: none;
 }
 
 .headerdetails a:hover {
@@ -132,11 +138,12 @@ img {
     border-radius: 25px;
     border: 1px solid white;
     background-color: transparent;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     justify-self: end;
     font-size: 14px;
     margin-right: 10px;
+    align-self: center;
 }
 
 .learn a {
@@ -152,7 +159,8 @@ img {
 .profilepic {
     grid-column: 2 / span 1;
     grid-row: 1 / span 5;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     width: 350px;
     height: 350px;
+    padding-left: 40px;
 }
