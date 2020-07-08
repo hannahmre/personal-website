@@ -1,159 +1,171 @@
-.middle {
-    display: flex;
-    flex-direction: column;
-}
-
-#scroll_holder {
-    height: 120px;
-}
-
-.about_header {
-    width: 300px;
-    text-align: center;
-    margin: auto;
-    border-bottom: 1px solid #829CD0;
-    /* padding-bottom: 5px; */
-    color: black;
-}
-
-.about_header h1 {
-    padding-top: 20px;
-    font-size: 35px;
-}
-
-.about_header p {
-    font-size: 35px;
-    font-style: italic;
-}
-
-.about {
-    text-align: center;
-    /* padding-top: 50px; */
-    margin: auto;
-    margin-bottom: 50px;
-    font-size: 18px;
-    color: black;
-}
-
-.countdown {
-    border: 1px solid #829CD0;
-    border-radius: 15px;
-    width: 400px;
-    padding: 10px;
-    margin: 50px auto;
-    padding-left: 25px;
-}
-
-.countdown p {
-    display: inline;
-    font-size: 18px;
-}
-
-#demo {
-    padding-left: 10px;
-    font-size: 18px;
-}
-
-.other_links a {
-    text-align: center;
-    color: #20368F;
-    font-size: 18px;
-    text-decoration: none;
-}
-
-.other_links a:hover {
-    color: #829CD0;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.coursesmain {
-    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
-    font-family: cursive;
-    letter-spacing: 2px;
-    background-color: #829CD0;
-    height: 1000px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* margin: auto; */
-    color: black;
-}
-
-.coursetitle {
-    text-align: center;
-    font-size: 2.5vw;
-}
-
-.course {
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 25%;
-    display: flex;
-    flex-direction: row;
-}
-
-.label {
-    flex-basis: 50%;
-    align-self: center;
-    font-size: 2vw;
-}
-
-.label h1 {
-    float: right;
-    padding-right: 20px;
-    font-weight: 100;
-}
-
-.box {
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.courselistbox {
-    border: 1px red solid;
-    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
-    width: 60%;
-    height: 80%;
-}
-
-footer {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 75px;
-    background-color: #20368F;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: #829CD0;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 800px) {
-    .hiddentwo p {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .course {
+    .middle {
+        display: flex;
         flex-direction: column;
     }
-    .box {
-        width: 100%;
-        height: 100%;
+    
+    #scroll_holder {
+        height: 120px;
     }
-}
-
-@media screen and (min-width: 1200px) {}
+    
+    .about_header {
+        width: 300px;
+        text-align: center;
+        margin: auto;
+        border-bottom: 1px solid #829CD0;
+        /* padding-bottom: 5px; */
+        color: black;
+    }
+    
+    .about_header h1 {
+        padding-top: 20px;
+        font-size: 35px;
+    }
+    
+    .about_header p {
+        font-size: 35px;
+        font-style: italic;
+    }
+    
+    .about {
+        text-align: center;
+        /* padding-top: 50px; */
+        margin: auto;
+        margin-bottom: 50px;
+        font-size: 18px;
+        color: black;
+    }
+    
+    .countdown {
+        border: 1px solid #829CD0;
+        border-radius: 15px;
+        width: 400px;
+        padding: 10px;
+        margin: 50px auto;
+        padding-left: 25px;
+    }
+    
+    .countdown p {
+        display: inline;
+        font-size: 18px;
+    }
+    
+    #demo {
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    
+    .other_links a {
+        text-align: center;
+        color: #20368F;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    
+    .other_links a:hover {
+        color: #829CD0;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .coursesmain {
+        /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+        font-family: cursive;
+        letter-spacing: 2px;
+        background-color: #829CD0;
+        height: 1100px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        /* margin: auto; */
+        color: black;
+    }
+    
+    .coursetitle {
+        text-align: center;
+        font-size: 3.5vw;
+        font-weight: lighter;
+        /* border-bottom: 1px solid #20368F; */
+        width: 20%;
+        margin: auto;
+        margin-bottom: 80px;
+        margin-top: 40px;
+    }
+    
+    .course {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .label {
+        flex-basis: 45%;
+        align-self: center;
+        font-size: 2vw;
+    }
+    
+    .label h1 {
+        float: right;
+        padding-right: 20px;
+        font-weight: 100;
+        font-style: italic;
+    }
+    
+    .box {
+        flex-basis: 55%;
+        display: flex;
+        /* align-items: s; */
+        justify-content: center;
+    }
+    
+    .courselistbox {
+        border-left: 1px solid #20368F;
+        /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+        width: 80%;
+        height: 90%;
+    }
+    
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 75px;
+        background-color: #20368F;
+    }
+    
+    footer a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    footer a:hover {
+        color: #829CD0;
+        text-decoration: none;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .hiddentwo p {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .course {
+            flex-direction: column;
+        }
+        .box {
+            width: 100%;
+            height: 100%;
+        }
+        .courselistbox {
+            border-bottom: 1px solid #20368F;
+            border-left: none;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {}
