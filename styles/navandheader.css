@@ -11,7 +11,7 @@ body {
 .design {
     background-color: #20368F;
     height: 1000px;
-    width: 105%;
+    width: 1300px;
     -ms-transform: rotate(25deg);
     transform: rotate(25deg);
     border-radius: 10%;
@@ -196,7 +196,19 @@ img {
     }
 }
 
+@media screen and (max-width: 730px) {
+    .headercontent {
+        margin-top: 100px;
+    }
+}
+
 @media screen and (max-width: 600px) {
+    .design {
+        height: 1050px;
+    }
+    .headercontent {
+        margin-top: 80px;
+    }
     .nav_name {
         font-size: 3.5vw;
     }
