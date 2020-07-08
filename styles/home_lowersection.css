@@ -12,7 +12,7 @@
     text-align: center;
     margin: auto;
     border-bottom: 1px solid #829CD0;
-    padding-bottom: 10px;
+    /* padding-bottom: 5px; */
     color: black;
 }
 
@@ -30,6 +30,7 @@
     text-align: center;
     /* padding-top: 50px; */
     margin: auto;
+    margin-bottom: 50px;
     font-size: 18px;
     color: black;
 }
@@ -66,6 +67,58 @@
     font-size: 20px;
 }
 
+.coursesmain {
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+    font-family: cursive;
+    letter-spacing: 2px;
+    background-color: #829CD0;
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    color: black;
+}
+
+.coursetitle {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.course {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+}
+
+.label {
+    flex-basis: 50%;
+    align-self: center;
+    font-size: 2vw;
+}
+
+.label h1 {
+    float: right;
+    padding-right: 20px;
+    font-weight: 100;
+}
+
+.box {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.courselistbox {
+    border: 1px red solid;
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+    width: 60%;
+    height: 80%;
+}
+
 footer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -90,6 +143,16 @@ footer a:hover {
     .hiddentwo p {
         padding-right: 20px;
         padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .course {
+        flex-direction: column;
+    }
+    .box {
+        width: 100%;
+        height: 100%;
     }
 }
 
