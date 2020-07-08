@@ -96,7 +96,7 @@ img {
 }
 
 .headone {
-    font-size: 55px;
+    font-size: 4.5vw;
     padding-top: 55px;
     align-self: center;
 }
@@ -105,7 +105,7 @@ img {
     grid-column: 0;
     grid-row: 2 / span 1;
     color: white;
-    font-size: 25px;
+    font-size: 2vw;
     align-self: center;
 }
 
@@ -113,7 +113,7 @@ img {
     grid-column: 0;
     grid-row: 3 / span 1;
     color: white;
-    font-size: 18px;
+    font-size: 2vw;
     align-self: start;
 }
 
@@ -122,6 +122,7 @@ img {
     grid-row: 4 / span 1;
     color: #EBEBEB;
     align-self: start;
+    font-size: 2vw;
 }
 
 .headerdetails a {
@@ -129,12 +130,12 @@ img {
     margin-top: 15px;
     font-family: Helvetica;
     position: relative;
-    font-size: 14px;
+    font-size: 2vw;
     text-decoration: none;
 }
 
 .headerdetails a:hover {
-    font-size: 14px;
+    font-size: 1.4vw;
     color: #829CD0;
     text-decoration: none;
 }
@@ -170,3 +171,46 @@ img {
     height: 350px;
     padding-left: 40px;
 }
+
+@media screen and (max-width: 800px) {
+    .headerdetails a {
+        font-size: 2.5vw;
+    }
+    .headerdetails {
+        font-size: 2.5vw;
+    }
+    .profilepic {
+        grid-row: 1 / span 4;
+        grid-column: 2 / span 1;
+        width: 300px;
+        height: 350px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .headone {
+        font-size: 6.5vw;
+    }
+    .headthree {
+        font-size: 3.5vw;
+    }
+    .headtwo {
+        font-size: 3vw;
+    }
+    .headerdetails a {
+        font-size: 2.5vw;
+    }
+    .headerdetails {
+        font-size: 2.5vw;
+    }
+    .profilepic {
+        grid-row: 1 / span 4;
+        grid-column: 2 / span 1;
+        width: 250px;
+        height: 300px;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {}
