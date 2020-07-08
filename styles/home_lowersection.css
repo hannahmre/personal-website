@@ -1,7 +1,6 @@
-.middle {
+/* .middle {
     border: 1px solid black;
-    /* margin-top: 500px; */
-}
+} */
 
 #scroll_holder {
     height: 150px;
@@ -20,11 +19,49 @@
     padding-top: 20px;
 }
 
+.about_header p {
+    font-size: 18px;
+    font-style: italic;
+}
+
 .about {
     text-align: center;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     margin: auto;
     font-size: 18px;
+    color: black;
+}
+
+.countdown {
+    border: 1px solid #829CD0;
+    border-radius: 15px;
+    width: 400px;
+    padding: 10px;
+    margin: 50px auto;
+    padding-left: 25px;
+}
+
+.countdown p {
+    display: inline;
+    font-size: 18px;
+}
+
+#demo {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.other_links a {
+    text-align: center;
+    color: #20368F;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.other_links a:hover {
+    color: #829CD0;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 footer {
@@ -33,15 +70,18 @@ footer {
     border: 1px solid black;
     display: flex;
     justify-content: space-evenly;
+    margin-top: 35px;
+    background-color: #20368F;
 }
 
 footer a {
+    color: white;
     text-decoration: none;
-    color: black;
 }
 
 footer a:hover {
-    color: blue;
+    color: #829CD0;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 600px) {}

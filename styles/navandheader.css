@@ -122,7 +122,7 @@ img {
     grid-row: 4 / span 1;
     color: #EBEBEB;
     align-self: start;
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 
 .headerdetails a {
@@ -130,12 +130,12 @@ img {
     margin-top: 15px;
     font-family: Helvetica;
     position: relative;
-    font-size: 2vw;
+    font-size: 1.7vw;
     text-decoration: none;
 }
 
 .headerdetails a:hover {
-    font-size: 1.4vw;
+    font-size: 1.9vw;
     color: #829CD0;
     text-decoration: none;
 }
@@ -176,6 +176,9 @@ img {
     .headerdetails a {
         font-size: 2.5vw;
     }
+    .headerdetails a:hover {
+        font-size: 2.7vw;
+    }
     .headerdetails {
         font-size: 2.5vw;
     }
@@ -200,6 +203,9 @@ img {
     }
     .headerdetails a {
         font-size: 2.5vw;
+    }
+    .headerdetails a:hover {
+        font-size: 2.7vw;
     }
     .headerdetails {
         font-size: 2.5vw;
