@@ -100,6 +100,18 @@
         flex-direction: row;
     }
     
+    .courselistbox ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .courselistbox ul li {
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    
     .label {
         flex-basis: 45%;
         align-self: center;
@@ -147,6 +159,24 @@
         text-decoration: none;
     }
     
+    @media screen and (max-width: 900px) {
+        .coursetitle {
+            margin-bottom: 10px;
+        }
+        .course {
+            flex-direction: column;
+            /* height: 25%; */
+        }
+        .comsci {
+            height: 30%;
+        }
+        .courselistbox {
+            border-bottom: 1px solid #20368F;
+            border-left: none;
+            margin-bottom: 20px;
+        }
+    }
+    
     @media screen and (max-width: 800px) {
         .hiddentwo p {
             padding-right: 20px;
@@ -155,17 +185,14 @@
     }
     
     @media screen and (max-width: 600px) {
-        .course {
-            flex-direction: column;
-        }
         .box {
             width: 100%;
             height: 100%;
         }
-        .courselistbox {
-            border-bottom: 1px solid #20368F;
-            border-left: none;
+        .coursetitle {
+            font-size: 8vw;
+        }
+        .label {
+            font-size: 3.5vw;
         }
     }
-    
-    @media screen and (min-width: 1200px) {}
