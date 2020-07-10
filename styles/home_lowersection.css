@@ -7,6 +7,10 @@
         height: 120px;
     }
     
+    #scroll_holder2 {
+        height: 150px;
+    }
+    
     .about_header {
         width: 300px;
         text-align: center;
@@ -194,5 +198,8 @@
         }
         .label {
             font-size: 3.5vw;
+        }
+        #scroll_holder {
+            height: 50px;
         }
     }
