@@ -1,0 +1,148 @@
+.titletabs {
+    display: grid;
+    grid-auto-rows: 2;
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: #20368F;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    align-self: center;
+}
+
+.projects {
+    color: #97a7e7;
+    font-size: 60px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.tabs {
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2);
+    /* width: 100vw; */
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-self: baseline;
+}
+
+.tabs div {
+    border-radius: 50px 50px 50px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs div a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs i {
+    padding-right: 10px;
+    font-size: 30px;
+}
+
+.tabs div p {
+    overflow: hidden;
+}
+
+.database {
+    background-color: #97a7e7;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.website {
+    background-color: #c1caf1;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.game {
+    background-color: #c1caf1;
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .tabs div p {
+        max-width: 0;
+        height: 25px;
+    }
+    .tabs div {
+        padding: 25px;
+    }
+    .tabs div i {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .open {
+        max-width: 0;
+        height: 0px;
+    }
+    .tabs div {
+        padding: 25px;
+    }
+    .tabs div i {
+        padding-left: 10px;
+    }
+    .database.active {
+        background-color: #97a7e7;
+        padding: 5px 20px;
+    }
+    .website.active {
+        background-color: #97a7e7;
+        padding: 5px 20px;
+    }
+    .game.active {
+        background-color: #97a7e7;
+        padding: 5px 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    .open {
+        height: 50px;
+        padding: 0px 25px;
+    }
+    .database a:hover {
+        padding: 5px 18px;
+    }
+    .website a:hover {
+        padding: 5px 18px;
+    }
+    .game a:hover {
+        padding: 5px 18px;
+    }
+    .database.active {
+        background-color: #97a7e7;
+        padding: 0px 25px;
+    }
+    .website.active {
+        background-color: #97a7e7;
+        padding: 0px 25px;
+    }
+    .game.active {
+        background-color: #97a7e7;
+        padding: 0px 25px;
+    }
+    .active a:hover {
+        padding: 0px;
+    }
+}

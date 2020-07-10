@@ -179,6 +179,26 @@ img {
     padding-left: 40px;
 }
 
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 75px;
+    background-color: #20368F;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #829CD0;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
     .nav_name {
         font-size: 2.5vw;

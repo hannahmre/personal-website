@@ -8,13 +8,11 @@
     <meta name="description" content="information about the projects I am working on." />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <link href="styles/slideshow.css" rel="stylesheet" />
-    <link href="styles/projects_styles.css" rel="stylesheet" />
+
+    <!-- <link href="styles/slideshow.css" rel="stylesheet" /> -->
+    <link href="styles/navandheader.css" rel="stylesheet" />
+    <link href="styles/project_header.css" rel="stylesheet" />
     <script src="scripts/header.js"></script>
 
     <!-- Scipts for Icons -->
@@ -22,37 +20,44 @@
 </head>
 
 <body class="body">
-    <nav id="header" class="navbar navbar-expand-lg bg-primary fixed-top pt-3 pb-3">
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand">Hannah Moore</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/hannahcmre/" target="_blank">LinkedIn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+    <nav id="header" class="nav">
+
+        <ul class="">
+            <li class="nav_name">
+                <a class="" href="index.html">Hannah Moore</a>
+            </li>
+            <li class="nav_projects">
+                <a class="" href="index.html">Home</a>
+            </li>
+            <li class="nav_linkedin">
+                <a class="" href="https://www.linkedin.com/in/hannahcmre/" target="_blank">LinkedIn</a>
+            </li>
+            <li class="nav_git">
+                <a class="" href="https://github.com/hannahmre" target="_blank">Github</a>
+            </li>
+        </ul>
     </nav>
 
-    <header>
-        <div class="container-fluid projectsheader text-center pt-5 pb-5">
+    <header class="titletabs">
+        <div class="header">
             <p class="projects">Projects</p>
+        </div>
+        <div class="tabs">
+            <div class="active database">
+                <a href="index.html"><i class="fas fa-server"></i><p>Database Project</p></a>
+            </div>
+            <div class="website open">
+                <a href="travel.html"><i class="fab fa-wordpress"></i><p>WordPress Website</p></a>
+            </div>
+            <div class="game open ">
+                <a href="#"><i class="fas fa-gamepad"></i><p>VR Game</p></a>
+            </div>
         </div>
     </header>
 
-    <section>
+
+
+    <!-- <section>
 
         <p class="project_title">Wholesale Products Database Project</p>
         <div class="slideshow-container">
@@ -184,13 +189,14 @@
     </section>
 
 
-    <script src="scripts/slideshow2.js"></script>
+    <script src="scripts/slideshow2.js"></script> -->
 
     <footer>
         <a href="https://uncw.edu/" target="_blank">UNCW Homepage</a> |
         <a href="https://uncw.edu/csc/" target="_blank"> CIS Homepage</a> |
         <a class="links" href="mailto:hannahcmoore23@gmail.com">Email Me</a> |
-        <a class="links" href="https://www.linkedin.com/in/hannahcmre/" target="_blank">LinkedIn Profile</a>
+        <a class="links" href="https://www.linkedin.com/in/hannahcmre/" target="_blank">LinkedIn Profile</a> |
+        <a class="links" href="https://github.com/hannahmre" target="_blank">Github</a>
     </footer>
 
 
