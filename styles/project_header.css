@@ -41,7 +41,8 @@
     justify-content: center;
 }
 
-.tabs div a {
+.tabs2 {
+    border-radius: 50px 50px 50px 50px;
     font-size: 20px;
     text-decoration: none;
     color: black;
@@ -51,7 +52,7 @@
     justify-content: center;
 }
 
-.tabs i {
+.tabs2 i {
     padding-right: 10px;
     font-size: 30px;
 }
@@ -60,30 +61,30 @@
     overflow: hidden;
 }
 
-.database {
+.db {
     background-color: #97a7e7;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.website {
+.wp {
     background-color: #c1caf1;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.game {
+.vr {
     background-color: #c1caf1;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
-    .tabs div p {
+    .tabs2 {
         max-width: 0;
         height: 25px;
     }
     .tabs div {
         padding: 25px;
     }
-    .tabs div i {
+    .tabs2 i {
         padding-left: 10px;
     }
 }
@@ -99,19 +100,14 @@
     .tabs div {
         padding: 25px;
     }
-    .tabs div i {
+    .tabs2 i {
         padding-left: 10px;
     }
-    .database.active {
-        background-color: #97a7e7;
+    .active {
+        /* background-color: #97a7e7; */
         padding: 5px 20px;
     }
-    .website.active {
-        background-color: #97a7e7;
-        padding: 5px 20px;
-    }
-    .game.active {
-        background-color: #97a7e7;
+    .active:hover {
         padding: 5px 20px;
     }
 }
@@ -121,28 +117,14 @@
         height: 50px;
         padding: 0px 25px;
     }
-    .database a:hover {
+    button:hover {
         padding: 5px 18px;
     }
-    .website a:hover {
-        padding: 5px 18px;
-    }
-    .game a:hover {
-        padding: 5px 18px;
-    }
-    .database.active {
-        background-color: #97a7e7;
+    .active {
+        /* background-color: #97a7e7; */
         padding: 0px 25px;
     }
-    .website.active {
-        background-color: #97a7e7;
+    .active:hover {
         padding: 0px 25px;
-    }
-    .game.active {
-        background-color: #97a7e7;
-        padding: 0px 25px;
-    }
-    .active a:hover {
-        padding: 0px;
     }
 }

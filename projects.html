@@ -45,27 +45,44 @@
             <p class="projects">Projects</p>
         </div>
         <div class="tabs">
-            <div class="active database">
-                <a class="tabs2 db" id="db" href="#" onclick="content_change('db')"><i class="fas fa-server"></i><p>Database Project</p></a>
+            <div class="database">
+                <button class="tabs2 db active" id="db" onclick="content_change('db')"><i class="fas fa-server"></i><p>Database Project</p></button>
             </div>
             <div class="website open">
-                <a class="tabs2 wp" id="wp" href="#" onclick="content_change('wp')"><i class="fab fa-wordpress"></i><p>WordPress Website</p></a>
+                <button class="tabs2 wp" id="wp" onclick="content_change('wp')"><i class="fab fa-wordpress"></i><p>WordPress Website</p></button>
             </div>
             <div class="game open ">
-                <a class="tabs2 vr" id="vr" href="#" onclick="content_change('vr')"><i class="fas fa-gamepad"></i><p>VR Game</p></a>
+                <button class="tabs2 vr" id="vr" onclick="content_change('vr')"><i class="fas fa-gamepad"></i><p>VR Game</p></button>
             </div>
         </div>
     </header>
 
     <section class="maincontentbox">
         <div class="contentbox databasep active">
-            <h1>database</h1>
+            <h1 class="cbTitle">Web Application for Purchasing Products</h1>
+            <p>HTML, CSS, JavaScript, MySQL, PHP</p>
+            <p>March 2020 - April 2020</p>
+            <p>Contributor: William Purdy, UNCW Student</p>
         </div>
         <div class="contentbox wordpressp">
-            <h1>wordpress</h1>
+            <h1>MockUp Website - <span><a href="http://gribbley.com/" target="_blank">Gribbley.com</a></span></h1>
+            <p>WordPress</p>
+            <p>February 2020</p>
+            <p>Created a mockup website using WordPress for a Charlotte based company to use in order learn more about their competitors.</p>
+
         </div>
         <div class="contentbox gamep">
-            <h1>game</h1>
+            <h1>Abducted - VR Escape Room</h1>
+            <p>Created a virtual reality escape room game using Unity and the HTC Vive.</p>
+            <p>August 2019 - December 2019</p>
+            <p>I was responsible for:</p>
+            <p>Creating the environment by finding the house, furniture and props on Unity Asset Store and those provided by professor. Creating the series of puzzles for each room. Creating the clues needed for the puzzles using Photoshop and Maya. Creating
+                the game trailer.</p>
+            <p>Contributors: David Dossou and Hunter Davis (UNCW Students)</p>
+            <!-- <video width="1000" height="500" controls>
+                <source src="vids/abducted.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
         </div>
     </section>
 
@@ -141,25 +158,6 @@
 
     <script src="scripts/slideshow.js"></script>
 
-    <section class="website">
-        <p class="project_title">Mockup Website</p>
-
-        <div class="slideshow-container">
-
-            <div class="mySlides1" style="display:block;">
-                <div class="numbertext">1 / 1</div>
-                <div class="computer"><i class="fas fa-desktop"></i></div>
-
-                <div class="text">
-                    <p class="slideone_p1" style="padding-top: 150px;">
-                        <a href="http://gribbley.com/" target="_blank">Gribbley.com</a>
-                    </p>
-                    <p class="slideone_p2">February 2020</p>
-                    <p class="slideone_p3">Created a mockup website using WordPress for a Charlotte based company to use in order learn more about their competitors.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section>
         <p class="project_title">VR Escape Room</p>
