@@ -281,4 +281,19 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (max-width: 480px) {
+    html {
+        overflow-x: hidden;
+    }
+    .profilepic {
+        grid-row: 1 / span 4;
+        grid-column: 2;
+        width: 215px;
+        height: 300px;
+        padding-left: 10px;
+        /* margin-right: 10px; */
+    }
+    .headercontent {
+        margin-top: 50px;
+    }
+}

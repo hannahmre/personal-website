@@ -183,3 +183,24 @@
             height: 50px;
         }
     }
+    
+    @media screen and (max-width: 480px) {
+        .about_header p {
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .about_header h1 {
+            margin-bottom: 20px;
+            margin-top: 35px;
+        }
+        .countdown {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .coursesmain {
+            height: 1250px;
+        }
+        .hidelink {
+            display: none;
+        }
+    }
