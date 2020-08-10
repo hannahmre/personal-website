@@ -155,20 +155,27 @@ img {
     width: 120px;
     height: 40px;
     justify-self: end;
-    font-size: 16px;
+    font-size: 14px;
     margin-right: 10px;
     align-self: start;
-}
-
-.learn a {
     color: white;
     text-decoration: none;
+    text-align: center;
+    padding-top: 15px;
 }
 
-.learn a:hover {
+
+/* .learn a {
+    color: white;
+    text-decoration: none;
+} */
+
+.learn:hover {
     color: #EBEBEB;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 17px;
+    width: 125px;
+    height: 45px;
 }
 
 .profilepic {
@@ -291,9 +298,55 @@ footer a:hover {
         width: 215px;
         height: 300px;
         padding-left: 10px;
-        /* margin-right: 10px; */
     }
     .headercontent {
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        overflow-x: hidden;
+    }
+    .design {
+        height: 1100px;
+    }
+    .headercontent {
+        position: static;
+        margin-top: 30px;
+    }
+    .headerPhrase {
+        margin-top: 0px;
+        grid-template-rows: 60px 50px 50px 50px 100px 50px;
+    }
+    .profilepic {
+        width: 180px;
+        height: 250px;
+        padding-left: 5px;
+        margin-top: 20px;
+    }
+    .headone {
+        font-size: 6vw;
+    }
+    .headthree {
+        font-size: 3.5vw;
+    }
+    .headtwo {
+        font-size: 3vw;
+    }
+    .headerdetails a {
+        font-size: 3vw;
+    }
+    .headerdetails a:hover {
+        font-size: 3.1vw;
+    }
+    .headerdetails {
+        font-size: 3vw;
+    }
+    .nav_name {
+        font-size: 4.5vw;
+    }
+    .learn {
+        margin-bottom: 20px;
     }
 }
