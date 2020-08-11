@@ -12,12 +12,15 @@
     }
     
     .about_header {
-        width: 300px;
+        width: 100%;
         text-align: center;
         margin: auto;
-        border-bottom: 1px solid #829CD0;
+        /* border-bottom: 1px solid #829CD0; */
         /* padding-bottom: 5px; */
         color: black;
+        background-color: white;
+        position: relative;
+        z-index: -1;
     }
     
     .about_header h1 {
@@ -37,6 +40,8 @@
         margin-bottom: 50px;
         font-size: 18px;
         color: black;
+        background-color: white;
+        width: 100%;
     }
     
     .countdown {

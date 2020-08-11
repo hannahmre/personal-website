@@ -6,6 +6,8 @@ html {
 
 body {
     margin: 0;
+    background-image: url("../../imgs/back1.jpg");
+    background-attachment: fixed;
 }
 
 .design {
@@ -40,6 +42,7 @@ img {
     transition: 0.2s;
     font-size: 18px;
     background-color: rgba(32, 54, 143, 0.85) !important;
+    z-index: 1;
 }
 
 .nav ul {
@@ -47,7 +50,8 @@ img {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-template-columns: 20% 48% 10% 10% 10%;
     grid-template-rows: 90px;
     grid-gap: 10px;
     align-items: center;
@@ -59,26 +63,26 @@ img {
 }
 
 .nav ul a:hover {
-    color: lightblue;
+    color: #829CD0;
 }
 
 .nav_name {
-    grid-column: 1 / span 6;
+    grid-column: 1;
     padding-left: 10px;
-    font-size: 1.7vw;
+    /* font-size: 1.7vw; */
 }
 
 .nav_projects {
-    grid-column: 10 / span 1;
+    grid-column: 3;
 }
 
 .nav_linkedin {
-    grid-column: 11 / span 1;
+    grid-column: 4;
     /* padding-right: 30px; */
 }
 
 .nav_git {
-    grid-column: 12 / span 1;
+    grid-column: 5;
     padding-right: 30px;
 }
 
@@ -88,11 +92,13 @@ img {
 
 .headerPhrase {
     display: grid;
-    grid-template-rows: 100px 50px 50px 50px 100px 50px;
+    grid-template-rows: 100px 50px 50px 50px 100px;
     grid-template-columns: 3fr 3fr;
     height: 70vh;
     margin-top: 65px;
     letter-spacing: 2px;
+    position: relative;
+    z-index: 0;
 }
 
 .headerPhrase p {
@@ -149,33 +155,61 @@ img {
 .learn {
     grid-column: 0;
     grid-row: 5 / span 1;
-    border-radius: 25px;
-    border: 1px solid white;
-    background-color: transparent;
-    width: 120px;
-    height: 40px;
-    justify-self: end;
-    font-size: 14px;
-    margin-right: 10px;
-    align-self: start;
-    color: white;
+    transform: translate(0%, -50%);
+    padding: 15px 30px;
+    text-transform: uppercase;
     text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    width: 20%;
+    height: 10%;
+    justify-self: end;
+    font-size: 12px;
+    /* margin-left: 50px; */
+    align-self: center;
     text-align: center;
-    padding-top: 15px;
 }
 
+.learn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #829CD0;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(0);
+}
 
-/* .learn a {
-    color: white;
-    text-decoration: none;
-} */
+.learn:hover:before {
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(1);
+}
 
-.learn:hover {
-    color: #EBEBEB;
-    text-decoration: none;
-    font-size: 17px;
-    width: 125px;
-    height: 45px;
+.learn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid white;
+    box-sizing: border-box;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+}
+
+.learn:hover:after {
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
 }
 
 .profilepic {
@@ -207,8 +241,11 @@ footer a:hover {
 }
 
 @media screen and (max-width: 800px) {
-    .nav_name {
-        font-size: 2.5vw;
+    .nav ul {
+        grid-template-columns: 40% 40% 20%;
+    }
+    .headerPhrase {
+        grid-template-rows: 80px 50px 50px 50px 100px;
     }
     .headerdetails a {
         font-size: 2.5vw;
@@ -226,11 +263,29 @@ footer a:hover {
         height: 350px;
         padding-left: 10px;
     }
+    .nav_linkedin {
+        display: none;
+    }
+    .nav_git {
+        display: none;
+    }
+    .nav_projects {
+        grid-column: 3;
+    }
+    .learn {
+        font-size: 12px;
+        width: 30%;
+        height: 10%;
+        padding: 15px 20px;
+    }
 }
 
 @media screen and (max-width: 730px) {
     .headercontent {
         margin-top: 100px;
+    }
+    .nav ul {
+        grid-template-columns: 40% 35% 25%;
     }
 }
 
@@ -242,16 +297,7 @@ footer a:hover {
         margin-top: 80px;
     }
     .nav_name {
-        font-size: 3.5vw;
-    }
-    .nav_linkedin {
-        display: none;
-    }
-    .nav_git {
-        display: none;
-    }
-    .nav_projects {
-        grid-column: 11 / span 1;
+        /* font-size: 3.5vw; */
     }
     .headone {
         font-size: 6.5vw;
@@ -279,12 +325,10 @@ footer a:hover {
         padding-left: 10px;
     }
     .learn {
-        width: 100px;
-        height: 35px;
-        font-size: 14px;
-    }
-    .learn a:hover {
-        font-size: 16px;
+        font-size: 12px;
+        width: 35%;
+        height: 10%;
+        padding: 15px 15px;
     }
 }
 
@@ -302,6 +346,16 @@ footer a:hover {
     .headercontent {
         margin-top: 50px;
     }
+    .headerPhrase {
+        margin-top: 0px;
+        grid-template-rows: 60px 50px 50px 40px 100px;
+    }
+    .learn {
+        font-size: 12px;
+        width: 40%;
+        height: 10%;
+        padding: 15px 15px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -314,10 +368,6 @@ footer a:hover {
     .headercontent {
         position: static;
         margin-top: 30px;
-    }
-    .headerPhrase {
-        margin-top: 0px;
-        grid-template-rows: 60px 50px 50px 50px 100px 50px;
     }
     .profilepic {
         width: 180px;
@@ -333,6 +383,7 @@ footer a:hover {
     }
     .headtwo {
         font-size: 3vw;
+        text-align: right;
     }
     .headerdetails a {
         font-size: 3vw;
@@ -346,7 +397,13 @@ footer a:hover {
     .nav_name {
         font-size: 4.5vw;
     }
+    .nav_projects {
+        grid-column: 3;
+    }
     .learn {
-        margin-bottom: 20px;
+        font-size: 12px;
+        width: 45%;
+        height: 10%;
+        padding: 15px 15px;
     }
 }
