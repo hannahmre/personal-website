@@ -63,6 +63,10 @@
         font-size: 18px;
     }
     
+    .other_links {
+        margin-bottom: 50px;
+    }
+    
     .other_links a {
         text-align: center;
         color: #20368F;
