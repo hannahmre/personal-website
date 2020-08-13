@@ -63,7 +63,7 @@ img {
 }
 
 .nav ul a:hover {
-    color: #829CD0;
+    color: #00ccff;
 }
 
 .nav_name {
@@ -148,7 +148,7 @@ img {
 
 .headerdetails a:hover {
     font-size: 1.9vw;
-    color: #829CD0;
+    color: #00ccff;
     text-decoration: none;
 }
 
@@ -177,7 +177,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #829CD0;
+    background: #00ccff;
     z-index: -1;
     transition: transform 0.5s;
     transform-origin: top left;
@@ -236,7 +236,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #829CD0;
+    color: #00ccff;
     text-decoration: none;
 }
 

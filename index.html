@@ -14,7 +14,7 @@
     <!-- Custom JavaScript -->
     <script src="scripts/header.js"></script>
     <script src="scripts/countdown.js"></script>
-    <script src="scripts/nametransition.js"></script>
+    <!-- <script src="scripts/nametransition.js"></script> -->
 
     <!-- Scripts for Icons -->
     <script src="https://kit.fontawesome.com/8d9f47f2ed.js" crossorigin="anonymous"></script>
@@ -70,11 +70,12 @@
         <!-- About Me -->
         <section id="middle" class="middle">
 
-            <div id="scroll_holder"></div>
+            <div id="scroll_holder" style="height:100px;"></div>
 
             <div class="about_header">
                 <h1>Hi, I'm ...</h1>
-                <p class="im"><span id="profileoption" class="profileoption"></span></p>
+                <!-- <p class="im"><span id="profileoption" class="profileoption">|</span>|</p> -->
+                <p class="im profileoption" id="profileoption">|</p>
             </div>
 
             <div class="about">
@@ -97,24 +98,26 @@
                 </div>
 
             </div>
+            <div id="scroll_holder2" style="height:50px;"></div>
+            <h1 class="coursetitle">Courses</h1>
+
 
             <div class="coursesmain">
-                <div id="scroll_holder2" style="height:150px;"></div>
-                <h1 class="coursetitle">Courses</h1>
+
                 <div class="course comsci">
                     <div class="comsci_label label">
                         <h1>Computer Science</h1>
                     </div>
                     <div class="comsci_box box">
-                        <div class="courselistbox">
-                            <ul>
-                                <li>Computer Networks</li>
-                                <li>Database Implementation & Design</li>
-                                <li>Design & Analysis of Algorithms</li>
-                                <li>Object-Oriented Programming & Design</li>
-                                <li>Software Engineering</li>
-                            </ul>
-                        </div>
+                        <!-- <div class="courselistbox"> -->
+                        <ul>
+                            <li>Computer Networks</li>
+                            <li>Database Implementation & Design</li>
+                            <li>Design & Analysis of Algorithms</li>
+                            <li>Object-Oriented Programming & Design</li>
+                            <li>Software Engineering</li>
+                        </ul>
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="course digitalarts">
@@ -122,12 +125,12 @@
                         <h1>Digital Arts</h1>
                     </div>
                     <div class="digitalarts_box box">
-                        <div class="courselistbox">
-                            <ul>
-                                <li>Introduction to Graphic Design</li>
-                                <li>Web Page Development Languages</li>
-                            </ul>
-                        </div>
+                        <!-- <div class="courselistbox"> -->
+                        <ul>
+                            <li>Introduction to Graphic Design</li>
+                            <li>Web Page Development Languages</li>
+                        </ul>
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="course datascience">
@@ -135,13 +138,13 @@
                         <h1>Data Science</h1>
                     </div>
                     <div class="datascience_box box">
-                        <div class="courselistbox">
-                            <ul>
-                                <li>Introduction to Statistics</li>
-                                <li>Statistical Programming</li>
-                                <li>Foundations of Data Science</li>
-                            </ul>
-                        </div>
+                        <!-- <div class="courselistbox"> -->
+                        <ul>
+                            <li>Introduction to Statistics</li>
+                            <li>Statistical Programming</li>
+                            <li>Foundations of Data Science</li>
+                        </ul>
+                        <!-- </div> -->
                     </div>
                 </div>
                 <div class="course others">
@@ -149,11 +152,11 @@
                         <h1>Others</h1>
                     </div>
                     <div class="others_box box">
-                        <div class="courselistbox">
-                            <ul>
-                                <li>Calculus/Analytical Gemometry II</li>
-                            </ul>
-                        </div>
+                        <!-- <div class="courselistbox"> -->
+                        <ul>
+                            <li>Calculus/Analytical Gemometry II</li>
+                        </ul>
+                        <!-- </div> -->
                     </div>
                 </div>
             </div>
@@ -173,6 +176,9 @@
         </footer>
 
         <!-- <script src="scripts/steps_appear.js"></script> -->
+        <script type="text/javascript">
+            setText();
+        </script>
     </div>
 
 </body>
