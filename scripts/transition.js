@@ -29,9 +29,9 @@ function transition(num) {
             boxes[num].style.display = 'block';
             buttons[num].classList.add = 'active';
             buttons[num].style.backgroundColor = "#97a7e7";
-            if (screen.width >= 769) {
-                buttons[num].style.padding = "0px25px";
-            }
+            // if (screen.width >= 769) {
+            //     buttons[num].style.padding = "0px";
+            // }
             // console.log('here2');
         } else {
             boxes[b].style.display = 'none';
