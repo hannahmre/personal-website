@@ -34,19 +34,20 @@
     align-self: baseline;
 }
 
-.tabs div {
+
+/* .tabs div {
     border-radius: 50px 50px 50px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .tabs2 {
     border-radius: 50px 50px 50px 50px;
     font-size: 20px;
     text-decoration: none;
     color: black;
-    width: 100%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +58,7 @@
     font-size: 30px;
 }
 
-.tabs div p {
+.tabs2 p {
     overflow: hidden;
 }
 
@@ -81,9 +82,9 @@
         max-width: 0;
         height: 25px;
     }
-    .tabs div {
+    /* .tabs2 {
         padding: 25px;
-    }
+    } */
     .tabs2 i {
         padding-left: 10px;
     }
@@ -97,18 +98,11 @@
         max-width: 0;
         height: 0px;
     }
-    .tabs div {
+    /* .tabs div {
         padding: 25px;
-    }
+    } */
     .tabs2 i {
         padding-left: 10px;
-    }
-    .active {
-        /* background-color: #97a7e7; */
-        padding: 5px 20px;
-    }
-    .active:hover {
-        padding: 5px 20px;
     }
 }
 
@@ -119,12 +113,5 @@
     }
     button:hover {
         padding: 5px 18px;
-    }
-    .active {
-        /* background-color: #97a7e7; */
-        /* padding: 0px 25px; */
-    }
-    .active:hover {
-        padding: 0px 25px;
     }
 }
