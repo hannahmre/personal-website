@@ -122,38 +122,32 @@
 }
 
 @media (max-width: 650px) {
-    .cbdiagram .pic {
-        min-width: 60%;
+    .cbdiagram:nth-child(2n+1) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0px;
     }
-    .cbdiagram .pic img {
+    .cbdiagram:nth-child(2n+2) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .cbdiagram {
+        margin: 0px;
+    }
+    .cbdiagram .pic {
+        position: relative;
+        padding: 0px;
+        /* margin-right: 0px; */
         width: 100%;
-        height: 60%;
     }
     .cbdiagram .piccontent {
-        padding-top: 100px;
-        padding-left: 50px;
-        padding-right: 0px;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
     }
-    .cbdiagram .admindiff {
-        padding-left: 150px;
-    }
-    .cbdiagram .userdiff {
-        padding-right: 50px;
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 500px) {
-    .cbdiagram .pic {
-        min-width: 60%;
-    }
-    .cbdiagram .pic img {
-        width: 100%;
-        height: 60%;
-    }
-    .cbdiagram .piccontent {
-        padding-top: 100px;
-        padding-left: 20px;
-        padding-right: 0px;
+    .cbdiagram .diff {
+        text-align: center;
+        padding: 0px;
     }
 }
