@@ -16,18 +16,19 @@
 }
 
 .projects {
-    color: #97a7e7;
+    color: white;
     font-size: 60px;
     text-align: center;
     padding-top: 60px;
+    letter-spacing: 1px;
 }
 
 .tabs {
     border-radius: 0px 0px 50px 50px;
-    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, .1);
     /* width: 100vw; */
     height: 20vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -46,11 +47,13 @@
     border-radius: 50px 50px 50px 50px;
     font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
 }
 
 .tabs2 i {
@@ -64,18 +67,18 @@
 }
 
 .db {
-    background-color: #97a7e7;
+    background-color: #00b8e6;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .wp {
-    background-color: #c1caf1;
+    background-color: #00ccff;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
     /* flex-shrink: 3; */
 }
 
 .vr {
-    background-color: #c1caf1;
+    background-color: #00ccff;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
     /* flex-shrink: 3; */
 }

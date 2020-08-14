@@ -28,7 +28,7 @@ function transition(num) {
             // console.log('here1');
             boxes[num].style.display = 'block';
             buttons[num].classList.add = 'active';
-            buttons[num].style.backgroundColor = "#97a7e7";
+            buttons[num].style.backgroundColor = "#00b8e6";
             // if (screen.width >= 769) {
             //     buttons[num].style.padding = "0px";
             // }
@@ -36,7 +36,7 @@ function transition(num) {
         } else {
             boxes[b].style.display = 'none';
             buttons[b].classList.remove = 'active';
-            buttons[b].style.backgroundColor = "#c1caf1";
+            buttons[b].style.backgroundColor = "#00ccff";
         }
 
     }
