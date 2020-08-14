@@ -14,12 +14,13 @@
     position: absolute;
     top: 0;
     left: 100%; */
-    background-color: rgb(0, 204, 255, .5);
-    color: rgb(255, 255, 255);
+    background-color: white;
+    color: black;
     height: 100%;
     width: 100%;
     animation: fade 1.5s;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .contentbox h1 {
@@ -69,7 +70,8 @@
     position: sticky;
     top: 0;
     min-width: 50%;
-    height: 100vh;
+    height: 80vh;
+    /* border: 1px solid black; */
 }
 
 .cbdiagram .pic img {
@@ -77,21 +79,81 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 600px;
+    width: 90%;
+    height: 60%;
 }
 
 .cbdiagram .piccontent {
-    padding: 100px 0 100px 100px;
+    padding: 200px 0 100px 100px;
     text-align: right;
-    margin-right: 70px;
+    margin-right: 20px;
+    /* border: 1px solid black; */
+}
+
+.cbdiagram .piccontent h2 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .grib {
     text-decoration: none;
     font-style: italic;
-    color: white;
+    color: gray;
 }
 
 .grib:hover {
     color: #20368F;
+}
+
+.spic img {
+    box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cbdiagram .diff {
+    padding-top: 100px;
+    /* padding-bottom: 200px; */
+}
+
+@media (max-width: 768px) {
+    .cbdiagram .pic img {
+        width: 100%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 650px) {
+    .cbdiagram .pic {
+        min-width: 60%;
+    }
+    .cbdiagram .pic img {
+        width: 100%;
+        height: 60%;
+    }
+    .cbdiagram .piccontent {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 0px;
+    }
+    .cbdiagram .admindiff {
+        padding-left: 150px;
+    }
+    .cbdiagram .userdiff {
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cbdiagram .pic {
+        min-width: 60%;
+    }
+    .cbdiagram .pic img {
+        width: 100%;
+        height: 60%;
+    }
+    .cbdiagram .piccontent {
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
 }

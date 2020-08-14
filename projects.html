@@ -70,7 +70,7 @@
                 </div>
                 <div class="piccontent">
                     <h2>Login Page</h2>
-                    <p class="p1">Users can sign in using their email and password or create an account if they are new. </p>
+                    <p class="p1">Users sign in using their email and password. Entry boxes are protected from SQL Injections using procedures.</p>
                 </div>
             </div>
 
@@ -80,30 +80,30 @@
                 </div>
                 <div class="piccontent">
                     <h2>Sign Up Page</h2>
-                    <p class="p1">Users can sign in using their email and password or create an account if they are new. </p>
+                    <p class="p1">New users can create an account using the sign up page. Once the account is created the user is relocated to the sign in page.</p>
                 </div>
             </div>
 
             <div class="cbdiagram">
-                <div class="pic">
+                <div class="pic spic">
                     <img src="imgs/WPDProductPage.png" alt="product page">
                 </div>
                 <div class="piccontent">
                     <h2>Product Page</h2>
-                    <p class="p1">The product page displays a table with all the products we offer that includes a column for users to enter the desired quantity they want to purchase, as well as, a column with checkboxes to indicate which products they want to purchase.
-                        The desired quantity column uses a trigger to ensure the user does not enter a negative number or a number over the amount we have in stock. The checkbox column and the purchase button, located above the table, uses a transaction
-                        to ensure changes are only made to the database if no errors occur. </p>
+                    <p class="p1">The product page displays a table with all the products we offer that includes a column for users to enter the desired quantity they want to purchase, as well as, a column with checkboxes to indicate which products they want to purchase.</p>
+                    <p class="p1">The desired quantity column uses a trigger to ensure the user does not enter a negative number or a number over the amount we have in stock. The checkbox column and the purchase button, located above the table, uses a transaction to
+                        ensure changes are only made to the database if no errors occur. </p>
                     <p class="p1">The user has the ability to filter through the products by category, sub-category and price range. The user can also search for products using the search bar. Lastly, the product page includes a view displaying the product name, product
                         price and sub-category of products that have recently been purchased by customers.</p>
                 </div>
             </div>
 
             <div class="cbdiagram">
-                <div class="pic">
+                <div class="pic spic">
                     <img src="imgs/WPDMyAccount.png" alt="user page">
 
                 </div>
-                <div class="piccontent">
+                <div class="piccontent diff userdiff">
                     <h2>User Dashboard</h2>
                     <p>Users can create an account and access their personalized user dashboard. The user dashboard displays a table of their order history, including purchase date and shipped date. It also shows the user's purchasing statistics, such as,
                         average spending amount and most spent on a purchase.</p>
@@ -111,14 +111,15 @@
             </div>
 
             <div class="cbdiagram">
-                <div class="pic">
+                <div class="pic spic">
                     <img src="imgs/WPDAdmin.png" alt="admin page">
                 </div>
-                <div class="piccontent">
+                <div class="piccontent diff admindiff">
                     <h2>Admin Dashboard</h2>
                     <p>There is an admin account page that allows anyone signed in as an admin to delete a product by name, update a product by using a stored procedure to increase or decrease the original price by the precent given by the user and add a
-                        new product. This page also displays a table of all orders that have been made and whether they have been shipped or not. The admin has the ability to choose a unique order number from a dropdown menu and ship the order. Lastly,
-                        the page displays the total number of users, total orders made and total amount spent on all orders.</p>
+                        new product. </p>
+                    <p>This page also displays a table of all orders that have been made and whether they have been shipped or not. The admin has the ability to choose a unique order number from a dropdown menu and ship the order. Lastly, the page displays
+                        the total number of users, total orders made and total amount spent on all orders.</p>
                 </div>
             </div>
 
