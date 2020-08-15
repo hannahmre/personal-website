@@ -14,7 +14,7 @@
     <!-- Custom JavaScript -->
     <script src="scripts/header.js"></script>
     <script src="scripts/countdown.js"></script>
-    <!-- <script src="scripts/nametransition.js"></script> -->
+
 
     <!-- Scripts for Icons -->
     <script src="https://kit.fontawesome.com/8d9f47f2ed.js" crossorigin="anonymous"></script>
@@ -74,8 +74,10 @@
 
             <div class="about_header">
                 <h1>Hi, I'm ...</h1>
-                <!-- <p class="im"><span id="profileoption" class="profileoption">|</span>|</p> -->
-                <p class="im profileoption" id="profileoption">|</p>
+                <div class="flex">
+                    <p class="im profileoption" id="profileoption"></p>
+                    <p class="blink">|</p>
+                </div>
             </div>
 
             <div class="about">
@@ -85,7 +87,7 @@
                     <p> I am a hardworking problem solver that communicates well with others and work great with teams.</p>
                     <p>You can find my education, experience and skills on my LinkedIn profile!</p>
                     <div class="countdown">
-                        <p><i class="fas fa-graduation-cap pr-2"></i>Graduation In: </p>
+                        <p><i class="fas fa-graduation-cap pr-2"></i> Graduation In: </p>
                         <p id="demo"></p>
                     </div>
                 </div>
@@ -176,10 +178,11 @@
         </footer>
 
         <!-- <script src="scripts/steps_appear.js"></script> -->
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             setText();
-        </script>
+        </script> -->
     </div>
+    <script src="scripts/nametransition.js"></script>
 
 </body>
 

@@ -1,81 +1,43 @@
-var count2 = 0;
-var timing = setInterval(start, 200);
+const texts = ["a Student", "a Problem Solver", "a Traveler", "a Dreamer", "a Web Developer", "a Fast Learner", "a Team Member"];
+var count = 0;
+var timer;
 
-var texts = ["a Student", "a Problem Solver", "a Traveler", "a Dreamer", "a Web Developer", "a Fast Learner", "a Team Member"];
-
-var prevword;
-var currentword;
-var count;
-
-// function setText() {
-//     if (prevword == null || (count >= texts.length)) {
-//         count = 0;
-//         currentword = texts[count];
-//         typeWriter(currentword);
-//         prevword = currentword;
-//         count += 1;
-//     } else {
-//         currentword = texts[count];
-//         typeWriter(currentword);
-//         prevword = currentword;
-//         count += 1;
-//     }
-// }
-
-var w = 0;
-
-
-function setText() {
-    // if (w < wrd.length) {
-    //     typeWriter(wrd);
-    //     // console.log(texts[w]);
-    //     w++;
-    // }
-
-    for (var w = 0; w < texts.length; w++) {
-        typeWriter(texts[w]);
-        // console.log(texts[w])
-    }
-}
-
-var i = 0;
-var speed = 50;
-var word = '';
-var temp = '';
-
-function typeWriter(txt) {
-    // console.log(txt);
-    if (i < txt.length) {
-        temp = document.getElementById("profileoption").innerHTML;
-        document.getElementById("profileoption").innerHTML = temp.substring(0, temp.length - 1);
-        word = document.getElementById("profileoption").innerHTML += txt[i];
-        // console.log(word);
-        var neww = document.getElementById("profileoption").innerHTML = word + '|';
-        i++;
-        setTimeout(typeWriter(), speed);
-
-    } else if (i >= word.length) {
-        word = word.substring(0, word.length - 1);
-        document.getElementById("profileoption").innerHTML = word;
-        document.getElementById("profileoption").innerHTML = word + '|';
-        setTimeout(typeWriter(), speed);
-    }
-
-
-}
+function typeWriter() {
+    let text = texts[count].split("");
+    var addingtext = function() {
+        if (text.length > 0) {
+            document.getElementById('profileoption').innerHTML += text.shift();
+        } else {
+            deletetext();
+            return false;
+        };
+        timer = setTimeout(addingtext, 200);
+    };
+    addingtext();
+};
 
 
 
-function start() {
-    count++;
-    console.log(count2);
-    if (count2 < texts.length) {
-        // console.log(texts[count2]);
-        setTimeout(setText(texts[count2]), speed);
-        // setText(texts[count2]);
-        // count2 = count2 + 1;
+function deletetext() {
+    let text = texts[count].split("");
+    var deletingtext = function() {
+        if (text.length > 0) {
+            text.pop();
+            document.getElementById('profileoption').innerHTML = text.join("");
+        } else {
+            if (texts.length > (count + 1)) {
+                count++;
+            } else {
+                count = 0;
+            };
+            typeWriter();
+            return false;
+        };
+        timer = setTimeout(deletingtext, 100);
+    };
 
-    }
-    // count2++;
+    deletingtext();
 
-}
+};
+
+typeWriter();
