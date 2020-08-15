@@ -7,8 +7,6 @@
         width: 100%;
         text-align: center;
         margin: auto;
-        /* border-bottom: 1px solid #829CD0; */
-        /* padding-bottom: 5px; */
         color: black;
         background-color: white;
         position: relative;
@@ -165,107 +163,8 @@
         opacity: 1;
         transition-delay: 0.2s;
     }
-    /* .coursesmain {
-        font-family: cursive;
-        letter-spacing: 2px;
-        background-color: #829CD0;
-        height: 1100px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        color: black;
-    }
-    
-    .coursetitle {
-        text-align: center;
-        font-size: 3.5vw;
-        font-weight: lighter;
-        width: 20%;
-        margin: auto;
-        margin-bottom: 80px;
-        margin-top: 40px;
-    }
-    
-    .course {
-        width: 100%;
-        height: 25%;
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .courselistbox ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    
-    .courselistbox ul li {
-        padding-bottom: 10px;
-        font-size: 20px;
-    }
-    
-    .label {
-        flex-basis: 45%;
-        align-self: center;
-        font-size: 2vw;
-    }
-    
-    .label h1 {
-        float: right;
-        padding-right: 20px;
-        font-weight: 100;
-        font-style: italic;
-    }
-    
-    .box {
-        flex-basis: 55%;
-        display: flex;
-        justify-content: center;
-    }
-    
-    .courselistbox {
-        border-left: 1px solid #20368F;
-        width: 80%;
-        height: 90%;
-    } */
-    
-    @media screen and (max-width: 900px) {
-        /* .coursetitle {
-            margin-bottom: 10px;
-        }
-        .course {
-            flex-direction: column;
-        }
-        .comsci {
-            height: 30%;
-        }
-        .courselistbox {
-            border-bottom: 1px solid #20368F;
-            border-left: none;
-            margin-bottom: 20px;
-        } */
-    }
-    
-    @media screen and (max-width: 800px) {
-        /* .hiddentwo p {
-            padding-right: 20px;
-            padding-left: 20px;
-        } */
-    }
     
     @media screen and (max-width: 600px) {
-        /* .box {
-            width: 100%;
-            height: 100%;
-        }
-        .coursetitle {
-            font-size: 8vw;
-        }
-        .label {
-            font-size: 3.5vw;
-        } */
         #scroll_holder {
             height: 50px;
         }
@@ -284,9 +183,6 @@
             margin-top: 30px;
             margin-bottom: 30px;
         }
-        /* .coursesmain {
-            height: 1250px;
-        } */
         .hidelink {
             display: none;
         }

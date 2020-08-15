@@ -16,6 +16,7 @@
     <link href="styles/projects_content.css" rel="stylesheet" />
     <script src="scripts/header.js"></script>
     <script src="scripts/transition.js"></script>
+    <!-- <script src="scripts/imgzoom.js"></script> -->
 
     <!-- Scipts for Icons -->
     <script src="https://kit.fontawesome.com/8d9f47f2ed.js" crossorigin="anonymous"></script>
@@ -66,7 +67,7 @@
 
             <div class="cbdiagram">
                 <div class="pic">
-                    <img src="imgs/WPDLogin.png" alt="login page">
+                    <img class='image' src="imgs/WPDLogin.png" alt="login page" id="img1" onclick="zoom('img1')">
                 </div>
                 <div class="piccontent">
                     <h2>Login Page</h2>
@@ -76,7 +77,7 @@
 
             <div class="cbdiagram">
                 <div class="pic">
-                    <img src="imgs/WPDRegister.png" alt="register page">
+                    <img class='image' src="imgs/WPDRegister.png" alt="register page" id="img2">
                 </div>
                 <div class="piccontent">
                     <h2>Sign Up Page</h2>
@@ -86,7 +87,7 @@
 
             <div class="cbdiagram">
                 <div class="pic spic">
-                    <img src="imgs/WPDProductPage.png" alt="product page">
+                    <img src="imgs/WPDProductPage.png" alt="product page" id="img3">
                 </div>
                 <div class="piccontent">
                     <h2>Product Page</h2>
@@ -100,7 +101,7 @@
 
             <div class="cbdiagram">
                 <div class="pic spic">
-                    <img src="imgs/WPDMyAccount.png" alt="user page">
+                    <img src="imgs/WPDMyAccount.png" alt="user page" id="img4">
 
                 </div>
                 <div class="piccontent diff userdiff">
@@ -112,7 +113,7 @@
 
             <div class="cbdiagram">
                 <div class="pic spic">
-                    <img src="imgs/WPDAdmin.png" alt="admin page">
+                    <img src="imgs/WPDAdmin.png" alt="admin page" id="img5">
                 </div>
                 <div class="piccontent diff admindiff">
                     <h2>Admin Dashboard</h2>
@@ -150,8 +151,6 @@
 
 
     <footer>
-        <a href="https://uncw.edu/" target="_blank">UNCW Homepage</a> |
-        <a href="https://uncw.edu/csc/" target="_blank"> CIS Homepage</a> |
         <a class="links" href="mailto:hannahcmoore23@gmail.com">Email Me</a> |
         <a class="links" href="https://www.linkedin.com/in/hannahcmre/" target="_blank">LinkedIn Profile</a> |
         <a class="links" href="https://github.com/hannahmre" target="_blank">Github</a>
